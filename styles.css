@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #28a745; /* Contoh warna hijau segar */
+  --secondary-color: #ffc107; /* Contoh warna kuning cerah */
+  --text-color: #333; /* Contoh warna teks gelap */
+}
+
+body {
+  font-family: "Poppins", sans-serif; /* Font yang lebih modern */
+  background-color: #f8f9fa; /* Warna latar belakang yang lebih terang */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px; /* Ukuran konten lebih lega */
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+  border-radius: 8px; /* Sudut membulat */
+  background-color: #fff; /* Latar belakang konten putih */
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start; /* Atur gambar sejajar dengan bagian atas teks */
+  margin-bottom: 30px; 
+}
+
+.profile-picture {
+  width: 200px; /* Ukuran gambar lebih besar */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; /* Agar gambar terpotong sesuai frame bulat */
+  margin-right: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin-top: 0;
+  font-size: 2.5rem; /* Ukuran judul lebih besar */
+  color: var(--primary-color); /* Menggunakan warna primer */
+}
+
+h2 {
+  color: var(--text-color);
+  margin-top: 30px; /* Jarak antar bagian lebih jelas */
+  border-bottom: 2px solid var(--secondary-color); /* Garis bawah pada judul */
+  padding-bottom: 10px;
+}
+
+/* Gaya untuk paragraf dan list */
+p, ul {
+  margin-bottom: 15px;
+}
+
+.experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience ul li {
+  position: relative; /* Untuk penempatan ikon */
+  padding-left: 30px; /* Beri ruang untuk ikon */
+}
+
+/* Ikon pada list experience (menggunakan pseudo-element) */
+.experience ul li::before {
+  content: "\2022"; /* Bullet point Unicode */
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: var(--secondary-color); /* Warna ikon */
+  font-size: 1.2rem;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
